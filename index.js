@@ -15,6 +15,6 @@ connectDB();
 router(app);
 
 
-app.listen(process.env.PORT, ()=>{
+app.listen(process.env.PORT ||3000, ()=>{
   console.log("Server run at port:: ", process.env.PORT||3000);
 })
